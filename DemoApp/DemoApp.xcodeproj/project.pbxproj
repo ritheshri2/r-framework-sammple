@@ -32,6 +32,34 @@
 			remoteGlobalIDString = 7A2637B420E369C0008FF5BA;
 			remoteInfo = DemoApp;
 		};
+		7A7B4F9C20E36E080078E8C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7B4F9720E36E070078E8C8 /* FrameworkOne.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A2637F320E36D8C008FF5BA;
+			remoteInfo = FrameworkOne;
+		};
+		7A7B4F9E20E36E080078E8C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7B4F9720E36E070078E8C8 /* FrameworkOne.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A2637FC20E36D8D008FF5BA;
+			remoteInfo = FrameworkOneTests;
+		};
+		7A7B4FCA20E370220078E8C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7B4FC520E370220078E8C8 /* FrameworkCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A7B4FAA20E36E250078E8C8;
+			remoteInfo = FrameworkCore;
+		};
+		7A7B4FCC20E370220078E8C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7B4FC520E370220078E8C8 /* FrameworkCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A7B4FB320E36E250078E8C8;
+			remoteInfo = FrameworkCoreTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +77,8 @@
 		7A2637D720E369C2008FF5BA /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2637DB20E369C2008FF5BA /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		7A2637DD20E369C2008FF5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7B4F9720E36E070078E8C8 /* FrameworkOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FrameworkOne.xcodeproj; path = ../FrameworkOne/FrameworkOne.xcodeproj; sourceTree = "<group>"; };
+		7A7B4FC520E370220078E8C8 /* FrameworkCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FrameworkCore.xcodeproj; path = ../FrameworkCore/FrameworkCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +109,8 @@
 		7A2637AC20E369C0008FF5BA = {
 			isa = PBXGroup;
 			children = (
+				7A7B4FC520E370220078E8C8 /* FrameworkCore.xcodeproj */,
+				7A7B4F9720E36E070078E8C8 /* FrameworkOne.xcodeproj */,
 				7A2637B720E369C0008FF5BA /* DemoApp */,
 				7A2637CF20E369C2008FF5BA /* DemoAppTests */,
 				7A2637DA20E369C2008FF5BA /* DemoAppUITests */,
@@ -126,6 +158,24 @@
 				7A2637DD20E369C2008FF5BA /* Info.plist */,
 			);
 			path = DemoAppUITests;
+			sourceTree = "<group>";
+		};
+		7A7B4F9820E36E070078E8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A7B4F9D20E36E080078E8C8 /* FrameworkOne.framework */,
+				7A7B4F9F20E36E080078E8C8 /* FrameworkOneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A7B4FC620E370220078E8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A7B4FCB20E370220078E8C8 /* FrameworkCore.framework */,
+				7A7B4FCD20E370220078E8C8 /* FrameworkCoreTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +268,16 @@
 			mainGroup = 7A2637AC20E369C0008FF5BA;
 			productRefGroup = 7A2637B620E369C0008FF5BA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7A7B4FC620E370220078E8C8 /* Products */;
+					ProjectRef = 7A7B4FC520E370220078E8C8 /* FrameworkCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 7A7B4F9820E36E070078E8C8 /* Products */;
+					ProjectRef = 7A7B4F9720E36E070078E8C8 /* FrameworkOne.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7A2637B420E369C0008FF5BA /* DemoApp */,
@@ -226,6 +286,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7A7B4F9D20E36E080078E8C8 /* FrameworkOne.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FrameworkOne.framework;
+			remoteRef = 7A7B4F9C20E36E080078E8C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7A7B4F9F20E36E080078E8C8 /* FrameworkOneTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FrameworkOneTests.xctest;
+			remoteRef = 7A7B4F9E20E36E080078E8C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7A7B4FCB20E370220078E8C8 /* FrameworkCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FrameworkCore.framework;
+			remoteRef = 7A7B4FCA20E370220078E8C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7A7B4FCD20E370220078E8C8 /* FrameworkCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FrameworkCoreTests.xctest;
+			remoteRef = 7A7B4FCC20E370220078E8C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7A2637B320E369C0008FF5BA /* Resources */ = {
